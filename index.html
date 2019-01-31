@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Supersonic Registraton Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="mystyle.css" type="text/css">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <style>
+		body, html{
+			margin:0;
+			padding:0;
+			height:100%;
+		}
+		.bg-Image{
+			background-image: url("VH1.png");
+			width:100%;
+			height:100%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: repeat;
+		}	
+		.title{
+			color:Red;
+			text-shadow: 3px 2px white;
+		}
+		.bgWhite{
+			background-color: #EEF5FF;
+			min-height:80%;
+			margin-top:2%;
+		}
+		div.polaroid {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		
+		.width100 {
+			max-width : 100%;
+		}
+		
+		h3 {
+			white-space: nowrap; 
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+  </style>
+  
+</head>
+
+<body class="bg-Image">
+<div>
+<div class="container">
+		<div class="row">
+			<div class="col-xs-1 col-md-2"></div>
+			<div class="col-xs-10 col-md-8 title"><center><h1>Jio</h1></center></div>	
+			<div class="col-xs-1 col-md-2"></div>
+		</div>
+</div>
+		
+<div class="container">
+		<div class="row">
+			<div class="col-xs-1 col-md-2"></div>
+			<div class="col-xs-10 col-md-8 bgWhite polaroid">
+				<div class="container width100">
+				<center>
+				    <h3>Offer Registration form</h3>
+					<form class="form-horizontal" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+						<input type=hidden name="oid" value="00D0o0000016OF5">
+						<input type=hidden name="retURL" value="https://ssupersonicVH2.github.io/jio-registration-thankyou/"><br>
+						<div class="form-group">							
+							<input  id="first_name" class="form-control form-control-sm" maxlength="40" name="first_name" size="20" type="text" placeholder="First Name"/>
+						</div>
+						
+						<div class="form-group">
+							      
+							<input  id="last_name" class="form-control" maxlength="80" name="last_name" size="20" type="text" placeholder="Last Name"/>
+						</div>
+						
+						<div class="form-group">
+							<input id="email" class="form-control" maxlength="80" name="email" size="20" type="email" placeholder="Email"/>
+						</div>
+						
+						<div class="form-group">
+							<input  id="company" class="form-control" maxlength="40" name="company" size="20" type="text" placeholder="Company"/>
+						</div>
+						
+						<div class="form-group">
+							<input  id="city" class="form-control" maxlength="40" name="city" size="20" type="text" placeholder="City"/>
+						</div>
+						
+						<div class="form-group">
+							<input  id="state" class="form-control" maxlength="20" name="state" size="20" type="text" placeholder="State/Province"/>
+						</div>
+
+							<select id="lead_source" name="lead_source" hidden>
+							<option value="Web" selected>Web</option>
+							</select>
+						
+
+						<div class="form-group">        
+							<input type="submit" class="btn btn-primary" name="submit">
+						</div>
+					</form>
+				</center>
+				</div>
+			</div>
+			<div class="col-xs-1 col-md-2"></div>
+		</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="toDoList.js"></script>
+</body>
+</html>
